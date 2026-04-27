@@ -1,0 +1,107 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=0.65cm,right=0.65cm,top=0.6cm,bottom=0.6cm]{geometry}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\pagenumbering{gobble}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{YASHAS M N}} \\[2pt]
+    \small \textbf{\href{mailto:yashasvic14@gmail.com}{yashasvic14@gmail.com}}\;|\; +91-123 \;|\;
+    \textbf{\href{https://www.linkedin.com/in/yashas-m-n-5b95a7236}{LinkedIn}}\;|\;
+    \textbf{\href{https://github.com/noobie-bob}{GitHub}}
+\end{center}
+
+\section*{Professional Summary}
+Software Engineer with 3+ years designing and delivering scalable backend services, REST APIs, real-time data pipelines, and AI-powered systems at HPE. Strong in Python, FastAPI, databases, distributed systems, and microservices architecture; Consistent track record of reducing operational overhead from hours to seconds across systems serving 200+ engineers.
+
+\section*{Professional Experience}
+
+\textbf{Hewlett Packard Enterprise (HPE)} \hfill \textit{Sep 2023 -- Present} \\
+\textit{Software Engineer} \hfill Bengaluru, India
+
+\vspace{-2pt}
+\begin{itemize}[leftmargin=*, itemsep=0.5pt, topsep=3pt]
+
+\item Co-architected a \textbf{multi-agent AI triage system} for HPE X10k Object Storage; uses ReAct arcitecture with tool calling support and agent-to-agent communication to autonomously query \textbf{JIRA, TestRail, build execution DB}, and curated failure-pattern libraries; Report generation time is \textbf{2--6 minutes vs. 30--40 minutes} per human analyst across \textbf{2,000+ tests}; system achieves \textbf{up to 100\% accuracy} on covered failure categories with \textbf{30-50\% failure coverage}, actively expanding both.
+
+\item Architected and migrated a critical \textbf{high-availability backend service} from Flask to \textbf{FastAPI} with full async design, ORM models (SQLModel), Valkey caching, HTTPS, and Nginx reverse proxy; powers a real-time data pipeline for failure triage and trend analysis across live build cycles -- reducing page load by \textbf{60--95\%} (2--3 min $\rightarrow$ 5--30s) for \textbf{100+ engineers}.
+
+\item Designed \textbf{automated weekend monitoring report} (TypeScript, Playwright, Prometheus); performs service health and general operational checks, auto-generating the email summary report a weekend on-call engineer would draft and distribute -- reducing \textbf{3--4 hours} of manual effort to \textbf{1 minute}.
+
+\item Co-maintained image creation pipeline for an in-house \textbf{Kubernetes-based VM provisioning platform} that replaces VMware (\textbf{\textasciitilde\$400K+ annual savings}); integrated Test Automation library qualification using Python and Ansible; redesigned the system to be async, improving \textbf{image upload and download time by 30--50\%} and reorganised the codebase.
+
+\item Owned \textbf{system design and optimization} of Django-based product dashboard serving executive leadership; refactored blocking I/O calls to async, introduced DuckDB-backed analytics, Chart.js visualizations, and cron scheduling -- improving load time by \textbf{80\%} (30-45s $\rightarrow$ 2--5s).
+
+\item Built async \textbf{Slack notification pipeline} (Python) processing mapped Jira bugs over the \textbf{30--60 builds weekly}, and delivering consolidated high incident Jira tickets summaries to Slack.
+
+\item Co-engineered \textbf{Pytest-based CLI tool} for managing \textbf{6,000+ integration test cases}; Added integrations for GitHub, JIRA, TestRail, and Confluence services; Enabled bulk update of \textbf{2,000+ test markers} per release, cutting \textbf{1--2 weeks of manual effort to 30 minutes}.
+
+\item Serving as \textbf{test repository admin}, supporting release branch conflict resolution and to facilitate inter-release branches test repository merge, developed Jenkins merge pipeline with conflict detection and resolution workflows; executed \textbf{200+ successful merges} with \textbf{30-second} max execution time per sync, supported \textbf{2 major releases} and \textbf{5 internal releases}.
+
+\item Created test config generation pipeline with \textbf{2,000+} automated runs, featuring auto-discovery of new test branches using Git.
+
+\item Developed in-house \textbf{Python wrapper library} using OOP and composition pattern for standardized MySQL, JIRA, and TestRail client access; adopted by \textbf{10+ internal tools}, reducing per-integration development time by \textbf{40--80\%}.
+
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Hewlett Packard Enterprise (HPE)} \hfill \textit{Feb 2023 -- Aug 2023} \\
+\textit{Software Engineering Intern} \hfill Bengaluru, India
+
+\vspace{-2pt}
+\begin{itemize}[leftmargin=*, itemsep=0.5pt, topsep=3pt]
+
+\item Built automated build-stability and performance reporting backend (Python, Flask, Pandas, Jenkins, MySQL, Elasticsearch); reduced report generation from \textbf{2--4 hours to 20--45 seconds} across \textbf{100+ weekly builds}; integrated JIRA REST API for bug categorization and automated stakeholder distribution.
+
+\end{itemize}
+
+\vspace{2pt}
+\textbf{NSLHub (Brane Enterprises)} \hfill \textit{Aug 2022 -- Jan 2023} \\
+\textit{Software Development Intern} \hfill Vidyavardhaka College of Engineering, Mysuru, India
+
+\vspace{-2pt}
+\begin{itemize}[leftmargin=*, itemsep=0.5pt, topsep=3pt]
+
+\item Built medical drug-delivery mobile application (Flutter/Dart) for a leading national hospital; integrated OTP authentication, camera-based verification, and full feature parity with the existing web platform.
+
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Real-Time Drone Detection System} -- \textit{Final Year Graduation Project, Vidyavardhaka College of Engineering} \hfill \textit{2022-23}
+
+\vspace{-2pt}
+\begin{itemize}[leftmargin=*, itemsep=0.5pt, topsep=2pt]
+
+\item Trained \textbf{YOLOv8} on \textbf{9,000+ labeled images/videos} achieving \textbf{96.7\% accuracy}; built Flask REST API backend with real-time inference and automated email alerting; open-sourced dataset on \href{https://www.kaggle.com/code/Sammn/drone-detection-with-yolov8/comments}{Kaggle} (\textbf{100+ upvotes, 180+ forks}); presented at national conference with published research paper.
+
+\item \textbf{Open-source contributions:} \textit{orderly-set} \href{https://github.com/seperman/orderly-set/pull/11}{(PR \#11)}, \textit{pyfuse3} \href{https://github.com/libfuse/pyfuse3/issues/131}{(Issue \#131)}, \textit{google-auth-library-python} \href{https://github.com/googleapis/google-auth-library-python/pull/1917}{(PR \#1917)}
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Languages:} Python, TypeScript, JavaScript, Bash, SQL \\
+\textbf{Backend \& APIs:} FastAPI, Flask, Django, REST API Design, SQLModel, Pytest, Pandas \\
+\textbf{Frontend:} HTMX, Jinja2, Bootstrap, Chart.js, DataTables.js \\
+\textbf{Infrastructure \& DevOps:} Docker, Kubernetes, Jenkins, Ansible, Nginx, GitHub CI/CD, Prometheus, Grafana, Elasticsearch \\
+\textbf{Databases \& Caching:} PostgreSQL, MySQL, DuckDB, Redis/Valkey
+
+\section*{Education \& Certifications}
+
+\textbf{B.E. in Computer Science} -- Vidyavardhaka College of Engineering \hfill CGPA: 8.4/10.0
+
+\vspace{3pt}
+\textbf{Kubernetes:} \href{https://www.credly.com/badges/033591b1-b5d3-4b2a-a64d-c60b5e7b5a5b}{CKAD} \;|\; \href{https://www.credly.com/badges/c3898ac5-72ad-4cd0-97ec-1ea6c3450bc2}{KCNA} \;|\; \href{https://www.credly.com/badges/872f643e-b4db-4d20-b22e-c99f0c3c82e7}{KCSA} -- The Linux Foundation \& CNCF \\
+\textbf{Oracle Cloud:} \href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=420F6B9D5AF685E2673024E914D7D242BB289E498DE57B014F4491C3D0EE5906}{OCI Generative AI Professional} \;|\; \href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=82D60C3E567E491254CC2E6AD61BDB6138592F83C296A17B1EF352AD75DFB5D3}{OCI Data Science Professional}
+
+\end{document}
